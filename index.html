@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>AdminStrap | Dashboard</title>
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -82,11 +83,22 @@
       <div class="col-md-3">
           <div class="list-group">
             <a href="index.html" class="list-group-item list-group-item-action active main__color__bg">
-              Dashboard
+             <i class="fas fa-cog"></i> Dashboard 
             </a>
-            <a href="pages.html" class="list-group-item list-group-item-action">Pages</a>
-            <a href="posts.html" class="list-group-item list-group-item-action">Posts</a>
-            <a href="users.html" class="list-group-item list-group-item-action">Users</a>
+            <a href="pages.html" class="list-group-item list-group-item-action"><i class="fas fa-list-ul"></i> Pages <span class="badge badge-secondary ml-5" style="float: right;">12</span></a>
+            <a href="posts.html" class="list-group-item list-group-item-action"><i class="fas fa-pencil-alt"></i> Posts <span class="badge badge-secondary ml-5" style="float: right;">30</span></a>
+            <a href="users.html" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Users <span class="badge badge-secondary ml-5" style="float: right;">400</span></a>
+        </div>
+
+        <div class="well mt-3 bg-light px-3 py-4 rounded">
+          <h5>Disk Space</h5>
+          <div class="progress">
+            <div class="progress-bar " role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+          </div>
+          <h5 class="mt-3">Bandwidth Used</h5>
+          <div class="progress">
+            <div class="progress-bar " role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+          </div>
         </div>
       </div>
       <div class="col-md-9">
@@ -99,5 +111,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
 </html>

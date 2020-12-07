@@ -95,8 +95,10 @@ body {
 .breadcrumb a{
   color: #333333;
 }
-
-
+.progress-bar {
+  background: #333333;
+  color: #fff;
+}
 
 
 

@@ -103,6 +103,13 @@ body {
   text-align: center;
 }
 
+#footer {
+  background: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
 
 
 

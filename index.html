@@ -59,7 +59,7 @@
           Create Content
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Add Page</a>
+          <a class="dropdown-item" type="button" data-toggle="modal" data-target="#addPage">Add Page</a>
           <a class="dropdown-item" href="#">Add Post</a>
           <a class="dropdown-item" href="#">Add User</a>
         </div>
@@ -90,7 +90,7 @@
             <a href="users.html" class="list-group-item list-group-item-action"><i class="fas fa-users"></i> Users <span class="badge badge-secondary ml-5" style="float: right;">400</span></a>
         </div>
 
-        <div class="well mt-3 bg-light px-3 py-4 rounded">
+        <div class="card mt-3 bg-light px-3 py-4 rounded">
           <h5>Disk Space</h5>
           <div class="progress">
             <div class="progress-bar " role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
@@ -102,11 +102,100 @@
         </div>
       </div>
       <div class="col-md-9">
-
+        <div class="card">
+          <h3 class="card-header main__color__bg">Website Overveiw</h3>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card dash-box">
+                  <h2 class="mx-auto py-1"> <i class="fas fa-users"></i> 400</h2>
+                  <h4 class="mx-auto py-1"> Users</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card dash-box">
+                  <h2 class="mx-auto py-1"> <i class="fas fa-list-ul"></i> 12</h2>
+                  <h4 class="mx-auto py-1"> Pages</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card dash-box">
+                  <h2 class="mx-auto py-1"> <i class="fas fa-pencil-alt"></i>  30</h2>
+                  <h4 class="mx-auto py-1"> Posts</h4>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card dash-box">
+                  <h2 class="mx-auto py-1"> <i class="fas fa-chart-pie"></i> 123,400</h2>
+                  <h4 class="mx-auto py-1"> Visitors</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <div class="card-header"><h4>Latest Users</h4></div>
+          <div class="card-body">
+            <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Joined</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>crookz@gmail.com</td>
+      <td>12 Dec 2021</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>jacobson@gmail.com</td>
+      <td>3 Nov 2020</td>
+    </tr>
+    <tr> 
+      <td>Larry</td>
+      <td>larryrondon@gmail.com</td>
+      <td>12 nov 2020</td>
+    </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modals -->
+<!-- Add page -->
+
+<!-- Modal -->
+<div class="modal fade " id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
